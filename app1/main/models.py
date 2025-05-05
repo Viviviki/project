@@ -8,5 +8,5 @@ class Product(models.Model):
     photo = models.ImageField(blank=True, upload_to='images')
 
     def __str__(self):
-       return self.my_field_name
+       return self.name
     
