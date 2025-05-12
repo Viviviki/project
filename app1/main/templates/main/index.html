@@ -8,9 +8,10 @@
 <body>
     <p> 
         {% for item in items %}
+        
         <a href="{% url 'main:detail_id' item.id %}">
         {{item.name}} <br>
-            <img scr="{{item.image.url}}" alt="">
+            <img src="/media/{{item.photo}}" alt="">
         </a>
         {% endfor %}
     </p>
